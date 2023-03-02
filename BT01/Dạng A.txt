@@ -1,0 +1,20 @@
+A.Dạng bài tìm hiểu
+1.Kiểm tra xem có được điểm A hay k;
+2.0
+3.Gán kiểu giá trị cho x và y sai thay int và long thành long long hết
+4.true
+5.chương trình không in ra gì hết;	
+6.Với đoạn code
+double x;
+cout<<x;
+trong hàm main sẽ in ra 7.90505e-323
+7.
+0
+0.75
+0.75
+0.75
+8.lỗi xung đột conflict declaration biến arg1
+9.biến char arg1='A'
+10.arg=-1;
+11. phải ép kiểu double cho (5/9)
+12.Here
