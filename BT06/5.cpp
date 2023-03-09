@@ -1,25 +1,8 @@
-#include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
-
-int n, C[100], k, Stop;
-
-void Init(void)
-{
-
-	cin >> n;
-	k = 1;
-	C[k] = n;
-}
-
-void Result(void)
-{
-	int i;
-	for (i = 1; i <= k; i++) cout << C[i] << " ";
-	cout << endl;
-}
-
-void Next_Division(void)
+int n, C[100], k;
+bool Stop;
+void Next_Division()
 {
 	int i, j, R, S, D;
 	i = k;
@@ -45,19 +28,23 @@ void Next_Division(void)
 	else Stop = true;
 }
 
-void Division(void)
+void Division()
 {
 	Stop = false;
 	while (!Stop)
 	{
-		Result();
+		int i;
+		for (i = 1; i <= k; i++) cout << C[i] << " ";
+		cout << endl;
 		Next_Division();
 	}
 
 }
 
-int main(void)
+int main()
 {
-	Init();
+	cin >> n;
+	k = 1;
+	C[k] = n;
 	Division();
 }
